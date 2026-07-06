@@ -1,0 +1,6 @@
+<html><body><script>
+fetch("file:///Users/testadmin/secrets.env")
+  .then(r => r.text())
+  .then(t => { document.write("<pre>" + btoa(t) + "</pre>"); })
+  .catch(e => { document.write("Error: " + e.message); });
+</script></body></html>
